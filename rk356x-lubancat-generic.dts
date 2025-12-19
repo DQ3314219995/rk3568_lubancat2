@@ -197,6 +197,15 @@
         >;
         default-brightness-level = <200>;
     };
+
+    my_test:test
+    {
+        #address-cells = <1>;
+        #size-cells = <1>;
+        compatible="test";
+        reg=<0x0xFDD60004 0x4 0xFDD6000C 0x4>;
+        status = "okay";
+    }
 };
 
 &saradc {
