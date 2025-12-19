@@ -184,6 +184,14 @@ V2版仅支持双屏，启用MIPI-DSI1时，HDMI会默认禁掉。
 		status = "okay";
 	};
 
+	my_test:DQtest{
+        #address-cells = <1>;
+        #size-cells = <1>;
+        compatible="test";
+        reg=<0xFDD60004 0x4 0xFDD6000C 0x4>;
+        status = "okay";
+    };
+
 };
 
 &pwm3 {
